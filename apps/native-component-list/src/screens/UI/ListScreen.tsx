@@ -5,9 +5,9 @@ import { ScrollView, Text } from 'react-native';
 
 export default function ListScreen() {
   return (
-    <ScrollView>
-     <List data={[{text: "hallo"},{text: "hallo"}]} renderItem={({item}) => <Text>{item}</Text>}/>
-    </ScrollView>
+
+     <List style={{flex: 1}} listStyle="palin" data={[{text: "Hello!"},{text: "By!"}, {text: "What?"}]} renderItem={({item}) => <Text style={{alignSelf: "center"}}>{item.text}</Text>}/>
+  
   );
 }
 

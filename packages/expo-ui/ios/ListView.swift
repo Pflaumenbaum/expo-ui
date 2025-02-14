@@ -10,7 +10,11 @@ class ListProps: ExpoSwiftUI.ViewProps {
 struct ListView: ExpoSwiftUI.View {
 @EnvironmentObject var props: ListProps
     var body: some View {
-      List(self.props.children ?? []) { $0 }
+        List(self.props.children ?? []) { child in
+            ZStack(alignment: .topLeading) {
+                child
+            }
+        }
           .modifier(ListStyleModifer(style: props.listStyle ?? "automatic"))
   }
 }

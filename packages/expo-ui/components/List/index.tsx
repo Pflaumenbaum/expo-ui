@@ -11,7 +11,7 @@ export type ListProps = {
 export type NativeListProps = {
     listStyle?: ListStyle;
     style?: StyleProp<ViewStyle>;
-    children: React.ReactNode[]
+    children: React.ReactNode
 }
 
 
@@ -24,7 +24,7 @@ type ListStyle =
   | "sidebar"
   | "palin";
 
-const ListNativeViev: React.ComponentType<
+const ListNativeView: React.ComponentType<
   NativeListProps
 > = requireNativeView('ExpoUI', 'ListView');
 
@@ -32,12 +32,12 @@ const ListNativeViev: React.ComponentType<
 export function List(props: ListProps) {
 
   return (
-   <ListNativeViev listStyle={props.listStyle}  style={[props.style, {flex: 1}]}>
+   <ListNativeView listStyle={props.listStyle}  style={[props.style, {flex: 1}]}>
     {props.data.map((item, index) => (
         <View key={index}>
             {props.renderItem({item, index})}
         </View>
     ))}
-   </ListNativeViev>
+   </ListNativeView>
   );
 }

@@ -11,7 +11,7 @@ export type ListProps = {
 export type NativeListProps = {
     listStyle?: ListStyle;
     style?: StyleProp<ViewStyle>;
-    children: React.ReactNode[];
+    children: React.ReactNode;
 };
 type ListStyle = "automatic" | "inset" | "insetGrouped" | "grouped" | "sidebar" | "palin";
 export declare function List(props: ListProps): import("react").JSX.Element;
