@@ -5,6 +5,7 @@ export type { ContentUnavailableView, ContentUnavailableProps } from '../compone
 export type { ContextMenu, ContextMenuProps, Submenu, SubmenuProps, ActivationMethod, } from '../components/ContextMenu';
 export type { Section, SectionProps } from '../components/Section';
 export type { Slider, SliderProps } from '../components/Slider';
+export type { List, ListProps } from '../components/List';
 /**
  * @hidden
  */

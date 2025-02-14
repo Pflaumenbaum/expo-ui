@@ -66,6 +66,14 @@ export const UIScreens = [
       return optionalRequire(() => require('./ContentUnavailableScreen'));
     },
   },
+  {
+    name: 'List component',
+    route: 'ui/list',
+    options: {},
+    getComponent() {
+      return optionalRequire(() => require('./ListScreen'));
+    },
+  },
 ];
 
 export default function UIScreen() {

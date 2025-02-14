@@ -14,5 +14,6 @@ public class ExpoUIModule: Module {
         View(ExpoUI.ContextMenu.self)
         View(ColorPickerView.self)
         View(ExpoContentUnavailableView.self)
+        View(ListView.self)
     }
 }
