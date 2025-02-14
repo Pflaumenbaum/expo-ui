@@ -30,6 +30,8 @@ struct PickerView: ExpoSwiftUI.View {
       #endif
       .if(props.variant == "segmented", { $0.pickerStyle(.segmented) })
       .if(props.variant == "menu", { $0.pickerStyle(.menu) })
+      .if(props.variant == "navigationLink", { $0.pickerStyle(.navigationLink) })
+        
       .onChange(of: selection, perform: { newValue in
         if props.selectedIndex == newValue {
           return
