@@ -4,12 +4,6 @@ import { StyleProp, StyleSheet, View, ViewStyle } from 'react-native';
 
 export type SectionProps = {
   title: string;
-
- /**
-   * Option to display section title in lower case (ios only).
-   */
-  displayTitleUppercase?: boolean
-
   style?: StyleProp<ViewStyle>;
   children: React.ReactNode;
 };
